@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner">
+        <div class="clouds">
+          <img src="./Assets/cloud1.png" alt="cloud1" style="--i: 1" />
+          <img src="./Assets/cloud2.png" alt="cloud2" style="--i: 2" />
+          <img src="./Assets/cloud3.png" alt="cloud3" style="--i: 3" />
+          <img src="./Assets/cloud4.png" alt="cloud4" style="--i: 4" />
+          <img src="./Assets/cloud5.png" alt="cloud5" style="--i: 5" />
+        </div>
+      </div>
+      <!-- HOMEPage -->
+      <div class="x">
+        <div class="homePage" id="homepg">
+          <div class="homepg">
+            <div class="mainhomePage" style="font-family: Bruno Ace SC, sans-serif; font-size: 90px;"
+            >
+            Measure Your Ozone Impact</div>
+            <div class="subhomePage">
+              Understand Your Environmental Contribution: 
+              Our Ozone Depletion Calculator provides a simple yet effective way to assess your
+               impact on ozone layer depletion. By evaluating emissions from fuel usage, electricity consumption, 
+              and personal travel over a specific period, we help you identify key contributors.
+               With this knowledge, you can adopt responsible choices,
+                reducing harmful effects and fostering a healthier planet.
+            </div>
+          </div>
+          <div class="btnhomePage">
+            <a href="#start" class="navbtns next n0" id="startButton">Caluculate &raquo;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOMENAV -->
+      <div class="homeNav" id="start">
+
+        <div class="hn2">
+          <div class="hn22" style="cursor: pointer">
+            <a href="../index.html" target="_blank" style="text-decoration: none;">Go To Main Page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- INPUT BOX -->
+      <form action="" class="ipBox">
+        <div class="electricity">
+          <div class="aa">
+            <div class="preheading"> Emissions from</div>
+            <div class="heading">Electricity Use</div>
+            <div class="subheading">
+              Please share total electricity consumption by your household for
+              the year.
+            </div>
+            <div class="aacontent">
+              <img src="./Assets/house1.png" alt="" class="img" />
+              <label for="elect"
+                >As a household, how many units of <br />
+                electricity (kWh) do you consume in a year?</label
+              >
+              <input type="number" id="elect" min="0" value="0" class="box" />
+            </div>
+            <div class="navbtn">
+              <!-- <a href="#" class="navbtns previous p1">&laquo; </a> -->
+              <a href="#" class="navbtns next n1" id="start">Next &raquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="houseFuel">
+          <div class="bb">
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Fuel use at home</div>
+            <div class="subheading">
+              Please share total electricity consumption by your household for
+              the year.
+            </div>
+            <div class="bbcontent respcontent">
+              <div class="bblpg">
+                <img src="./Assets/lpg.png " alt="" class="img" />
+                <label for="lpg">Gas Cylinder<br />(in kg)</label>
+                <input type="number" id="lpg" min="0" value="0" class="box" />
+              </div>
+              <div class="bbcoal">
+                <img src="./Assets/coal.png" alt="" class="img" />
+                <label for="coal"
+                  >Coal Consumption <br />
+                  (in kg)</label
+                >
+                <input type="number" id="coal" min="0" value="0" class="box" />
+              </div>
+            </div>
+            <div class="navbtn">
+              <a href="#start" class="navbtns previous p2">&laquo; </a>
+              <a href="#" class="navbtns next n2">Next &raquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fasttravel">
+          <div class="cc">
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Travel</div>
+            <div class="subheading">
+              Please provide approximate kms travelled by you in a year using
+              the following modes of transport.
+            </div>
+            <div class="cccontent respcontent">
+              <div class="ccair">
+                <img src="./Assets/aeroplane.png" alt="" class="img" />
+                <label for="air"
+                  >Air Travel <br />
+                  (in km)</label
+                >
+                <input type="number" id="air" min="0" value="0" class="box" />
+              </div>
+              <div class="ccrail">
+                <img src="./Assets/train.png" alt="" class="img" />
+                <label for="rail"
+                  >Rail Travel <br />
+                  (in km)</label
+                >
+                <input type="number" id="rail" min="0" value="0" class="box" />
+              </div>
+              <div class="ccmetro">
+                <img src="./Assets/metro.png" alt="" class="img" />
+                <label for="metro"
+                  >Metro Travel <br />
+                  (in km)</label
+                >
+                <input type="number" id="metro" min="0" value="0" class="box" />
+              </div>
+            </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p10">&laquo; </a>
+              <a href="#" class="navbtns next n10">Next &raquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slowtravel">
+          <div class="dd">
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Travel</div>
+            <div class="subheading">
+              Please provide approximate kms travelled by you in a year using
+              the following modes of transport.
+            </div>
+            <div class="ddcontent respcontent">
+              <div class="ddbus">
+                <img src="./Assets/bus.png" alt="" class="img" />
+                <label for="bus"
+                  >Bus Travel <br />
+                  (in km)</label
+                >
+                <input type="number" id="bus" min="0" value="0" class="box" />
+              </div>
+              <div class="ddcar">
+                <img src="./Assets/car.png" alt="" class="img" />
+                <label for="car"
+                  >Car Travel <br />
+                  (in km)</label
+                >
+                <input type="number" id="car" min="0" value="0" class="box" />
+              </div>
+            </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p3">&laquo; </a>
+              <a href="#" class="navbtns next n3">Next &raquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="travelFuel">
+          <div class="ee">
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Travel Fuel</div>
+            <div class="subheading">
+              Please provide approximate liters of fuel used by you in a year.
+            </div>
+            <div class="eecontent respcontent">
+              <div class="eepetrol">
+                <img src="./Assets/red-pump.png" alt="" class="img" />
+                <label for="petrol"
+                  >Petrol Consumption <br />
+                  (in litre)</label
+                >
+                <input
+                  type="number"
+                  id="petrol"
+                  min="0"
+                  value="0"
+                  class="box"
+                />
+              </div>
+              <div class="eediesel">
+                <img src="./Assets/orange-pump.png" alt="" class="img" />
+                <label for="diesel"
+                  >Diesel Consumption <br />
+                  (in litre)</label
+                >
+                <input
+                  type="number"
+                  id="diesel"
+                  min="0"
+                  value="0"
+                  class="box"
+                />
+              </div>
+              <div class="eecng">
+                <img src="./Assets/yellow-pump.png" alt="" class="img" />
+                <label for="cng">CNG Consumption<br />(in litre)</label>
+                <input type="number" id="cng" min="0" value="0" class="box" />
+              </div>
+            </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p4">&laquo; </a>
+              <a href="#" class="navbtns next n4">Next &raquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="meal">
+          <div class="ff">
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Meals</div>
+            <div class="subheading">
+              Please select your meal preference for the year.
+            </div>
+            <div class="ffcontent respcontent">
+              <div class="ffimg">
+                <img src="./Assets/vegan1 .png" alt="" class="img" /><br />
+                <div class="ffvegan">
+                  <label for="vegan">Vegan</label>
+                  <input type="radio" id="vegan" value="vegan" name="food" />
+                </div>
+              </div>
+              <div class="ffimg">
+                <img src="./Assets/vegan2.png" alt="" class="img" /><br />
+                <div class="ffveg">
+                  <label for="veg">Vegetarain</label>
+                  <input
+                    type="radio"
+                    id="veg"
+                    value="veg"
+                    name="food"
+                    checked
+                  />
+                </div>
+              </div>
+              <div class="ffimg">
+                <img src="./Assets/meat vegan .png" alt="" class="img" /><br />
+                <div class="ffmeat">
+                  <label for="meat">Meat Eater</label>
+                  <input type="radio" id="meat" value="meat" name="food" />
+                </div>
+              </div>
+            </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p5">&laquo; </a>
+              <a href="#" class="navbtns next n5" onclick="calculator()"
+                >Submit &raquo;</a
+              >
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- OUTPUT BOX -->
+      <div class="opBox">
+
+        <div class="opBoxContent">
+          <div class="op">
+           <div class="opBox1" ></div>
+           <div class="opBox1" ></div>
+          </div>
+          <div class="op2">
+            <div class="graph1">
+            <canvas id="myChart1"></canvas>
+            </div>
+            <div class="graph2">
+          <canvas id="myChart2"></canvas>
+            </div>
+            <div class="graph3">
+        <canvas id="myChart3"></canvas>
+            </div>
+                    </a>
+                </div> 
+                    </a>
+                </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+    
+            </div>
+          </div>
+          
+        </div>
+
+
+      </div>
+      
+    </div>
+    
+
+  <script>
+    document.getElementById('startButton').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.querySelector('#start').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "arial";
+  font-size: 14px;
+  background-image: url('assests/bg-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;  
+  overflow: auto;
+}
+p {
+  font-style: 14px;
+  color: rgb(243, 238, 238);
+}
+
+.navigationBar form button {
+  margin: 0 8px;
+  font-size: 14px;
+}
+.navigationBar form i {
+  margin-right: 7px;
+}
+.login {
+  border: none;
+  color: rgb(246, 243, 243);
+}
+.login:hover {
+  background-color: #fff;
+  color: green;
+}
+.articles {
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.articles h2 {
+  font-weight: 600;
+  text-align: center;
+}
+.articles .headLine {
+  width: 100px;
+  border-top: 2px solid gray;
+}
+.articles ul li a {
+  color: rgb(226, 224, 224);
+  font-weight: 500;
+}
+.articles ul li .active {
+  color: rgb(242, 241, 241);
+}
+.articles ul li a:hover {
+  color: green;
+}
+
+.card{
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  
+ 
+}
+
+.card-img-top{
+  border-radius: 16px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top:15px;
+  display: block;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.373);
+}
+
+
+.row .card {
+  margin: 30px auto;
+}
+.row .card .card-body h6 {
+  font-weight: 600;
+}
+.circle {
+  padding: 5px 11px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.innerRow h6 {
+  color: rgb(252, 249, 249);
+}
+.container {
+  color: white;
+}
+
+.animate-title {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  margin-bottom: 7%;
+  animation: fadeInTitle 1s ease-in-out;
+}
+
+.animate-articles {
+  animation: fadeInArticles 1s ease-in-out;
+}
+
+@keyframes fadeInTitle {
+  from {
+      opacity: 0%;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 100%;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInArticles {
+  from {
+      opacity: 0%;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 100%;
+      transform: translateY(0);
+  }
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px white;
+}
+
+.navbar-brand {
+  font-family: Bruno Ace SC, sans-serif;
+}
