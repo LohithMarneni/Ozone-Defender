@@ -22,7 +22,7 @@ function calculator() {
     console.log("Selected Food:", mealIP.value);
 
     if (mealIP == veg) {
-        totalEmission = (electIP * 0.00071) + (lpgIP * 0.00207) + (caolIP * 0.0025) + (airIP * 0.000121) + (railIP * 0.0078 / 1000) + (metroIP * 0.0139 / 1000) + (busIP * 0.054 / 1000) + (carIP * 0.1431 / 1000) + (2.176) + (petrolIP * 2.34 / 1000) + (dieselIP * 2.71 / 1000) + (cngIP * 2.07 / 1000);
+        totalEmission = (electIP * 0.00076) + (lpgIP * 0.00217) + (caolIP * 0.0027) + (airIP * 0.000127) + (railIP * 0.0077 / 1005) + (metroIP * 0.0145 / 1005) + (busIP * 0.059 / 1005) + (carIP * 0.1468 / 1008) + (2.179) + (petrolIP * 2.34 / 1000) + (dieselIP * 2.71 / 1050) + (cngIP * 2.15 / 1054);
     } else if (mealIP == vegan) {
         totalEmission = (electIP * 0.00071) + (lpgIP * 0.00207) + (caolIP * 0.0025) + (airIP * 0.000121) + (railIP * 0.0078 / 1000) + (metroIP * 0.0139 / 1000) + (busIP * 0.054 / 1000) + (carIP * 0.1431 / 1000) + (2.019) + (petrolIP * 2.34 / 1000) + (dieselIP * 2.71 / 1000) + (cngIP * 2.07 / 1000);
     } else {
@@ -58,7 +58,7 @@ function calculator() {
         datasets: [{
             label: 'Items Data',
             data: itemdata,
-            backgroundColor: 'rgb(191, 45, 45)',
+            backgroundColor: 'rgb(109, 5, 29)',
         }]
     };
 
@@ -84,7 +84,7 @@ function calculator() {
         datasets: [{
             label: 'Items Data',
             data: itemdata2,
-            backgroundColor: ['rgb(191, 45, 45)', 'rgb(191, 0, 45)', 'rgb(191, 45, 0)', 'rgb(191, 45, 45)', 'rgb(191, 0, 45)', 'rgb(191, 45, 0)', 'rgb(191, 45, 0)'],
+            backgroundColor: ['rgb(18, 208, 69)', 'rgb(18, 208, 69)', 'rgb(18, 208, 69)', 'rgb(18, 208, 69)', 'rgb(18, 208, 69)', 'rgb(18, 208, 69)', 'rgb(18, 208, 69)'],
         }]
     };
 
@@ -110,7 +110,7 @@ function calculator() {
         datasets: [{
             label: 'Items Data',
             data: itemdata1,
-            backgroundColor: 'rgb(191, 45, 45)',
+            backgroundColor: 'rgb(38, 44, 40)',
         }]
     };
 

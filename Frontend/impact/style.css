@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"); */
 
 
 body {
@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
   font-family: "arial";
   font-size: 14px;
-  background-image: url('assests/bg-img.jpg');
+  background-image: url('assests/bg-image2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -33,7 +33,7 @@ body {
     height: 90vh;
     margin: 1.2rem 1rem 1rem 1rem;
     padding: 1.5rem;
-    background-image: url('./Assets/banner.jpg');
+    background-image: url('./Assets/image.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
